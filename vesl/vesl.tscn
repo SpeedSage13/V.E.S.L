@@ -1,3 +1,11 @@
 [gd_scene format=3 uid="uid://bhhtgktvlmlqt"]
 
+[ext_resource type="PackedScene" uid="uid://daq2urx82lc54" path="res://bobb.tscn" id="1_h22ba"]
+[ext_resource type="PackedScene" uid="uid://xgudr4gvybt4" path="res://bounds.tscn" id="2_txbua"]
+
 [node name="Vesl" type="Node2D" unique_id=837608908]
+
+[node name="bobb" parent="." unique_id=21017796 instance=ExtResource("1_h22ba")]
+
+[node name="StaticBody2D" parent="." unique_id=808677083 instance=ExtResource("2_txbua")]
+position = Vector2(0, 32)
