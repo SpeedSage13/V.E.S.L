@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://daq2urx82lc54"]
 
+[ext_resource type="Script" uid="uid://bo84tr2a634t8" path="res://bobb.gd" id="1_f0mex"]
 [ext_resource type="Texture2D" uid="uid://braqhau5ba50e" path="res://assets/sprites/knight.png" id="1_w7vct"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ij6vw"]
@@ -42,6 +43,7 @@ animations = [{
 radius = 6.0
 
 [node name="bobb" type="CharacterBody2D" unique_id=21017796]
+script = ExtResource("1_f0mex")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1789312873]
 sprite_frames = SubResource("SpriteFrames_lhvu3")
