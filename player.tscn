@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://dbmo55cdgmoom" path="res://Playerprites/Idle_Sprites/sprite-1-5(1).png" id="6_5tmop"]
 [ext_resource type="Texture2D" uid="uid://d08tvfj4w6dyq" path="res://Playerprites/Idle_Sprites/sprite-1-6(1).png" id="7_7ahtn"]
 [ext_resource type="Texture2D" uid="uid://c5myxenji5pn2" path="res://Playerprites/Run_Sprites/sprite-19-1.png" id="8_7lmhl"]
+[ext_resource type="Texture2D" uid="uid://b10irqwwtnl0k" path="res://Playerprites/Jump_Sprites/sprite-27-4.png" id="8_u1c27"]
 [ext_resource type="Texture2D" uid="uid://barcbcxjlfm0g" path="res://Playerprites/Run_Sprites/sprite-19-2.png" id="9_dx0e4"]
 [ext_resource type="Texture2D" uid="uid://bim4m8u17ddai" path="res://Playerprites/Run_Sprites/sprite-19-3.png" id="10_jm5j8"]
 [ext_resource type="Texture2D" uid="uid://wjq3me566kba" path="res://Playerprites/Run_Sprites/sprite-19-4.png" id="11_7hik5"]
@@ -39,6 +40,14 @@ animations = [{
 }],
 "loop": true,
 "name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_u1c27")
+}],
+"loop": true,
+"name": &"Jump",
 "speed": 5.0
 }, {
 "frames": [{
@@ -83,8 +92,7 @@ script = ExtResource("1_u1c27")
 
 [node name="Character_Sprites" type="AnimatedSprite2D" parent="." unique_id=563439611]
 sprite_frames = SubResource("SpriteFrames_sxias")
-animation = &"Idle"
-frame_progress = 0.54066783
+animation = &"Jump"
 
 [node name="Floor_Collision" type="CollisionShape2D" parent="." unique_id=2111605082]
 position = Vector2(-0.5, 0.5)
