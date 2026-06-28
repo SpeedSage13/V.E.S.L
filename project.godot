@@ -10,9 +10,13 @@ config_version=5
 
 [application]
 
-config/name="New Game Project"
+config/name="V.E.S.L."
 run/main_scene="uid://m11s5nicnrph"
 config/features=PackedStringArray("4.6", "Forward Plus")
+
+[display]
+
+window/size/mode=2
 
 [input]
 
@@ -49,3 +53,4 @@ Sprint={
 [rendering]
 
 rendering_device/driver.windows="d3d12"
+viewport/hdr_2d=true

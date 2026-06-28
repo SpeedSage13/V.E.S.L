@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://m11s5nicnrph"]
 
-[ext_resource type="PackedScene" uid="uid://ckudr8chj1kgo" path="res://player.tscn" id="1_u2yxt"]
+[ext_resource type="PackedScene" uid="uid://dtjwbh56wmhen" path="res://player.tscn" id="1_u2yxt"]
+[ext_resource type="Texture2D" uid="uid://by8alwg3olfru" path="res://Stage Sprites/1c223ed1e8871fb269c201d2fbe7f1f1.jpg" id="2_4o7sk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_561qk"]
 size = Vector2(8508.518, 466.38782)
@@ -47,9 +48,11 @@ scale = Vector2(0.7259784, 0.69684523)
 [node name="CharacterBody2D" parent="." unique_id=266382864 instance=ExtResource("1_u2yxt")]
 position = Vector2(-4719.149, 396.07074)
 
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1438568377]
-position = Vector2(-1.3774517, 0)
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1438568377]
+position = Vector2(-4719.1494, 397.50586)
+scale = Vector2(1.0000001, 1.0000001)
 zoom = Vector2(2.5, 2.5)
+process_callback = 0
 limit_enabled = false
 position_smoothing_enabled = true
 drag_horizontal_enabled = true
@@ -64,6 +67,11 @@ scale = Vector2(2.5, 2.5)
 position = Vector2(-793.1372, 263.76028)
 scale = Vector2(0.40000018, 0.4000002)
 shape = SubResource("RectangleShape2D_561qk")
+
+[node name="Sprite2D" type="Sprite2D" parent="Stage/Big Floor or Something" unique_id=551623769]
+position = Vector2(-2356.888, -0.00036239624)
+scale = Vector2(12.759314, 1.5163568)
+texture = ExtResource("2_4o7sk")
 
 [node name="Wall2" type="CollisionShape2D" parent="Stage" unique_id=1511526234]
 position = Vector2(588.4145, 69.50002)

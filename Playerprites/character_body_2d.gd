@@ -1,14 +1,13 @@
 extends CharacterBody2D
 
-const SPEED = 100
-const RUN_SPEED = 300.0
+const SPEED = 10
+const RUN_SPEED = 600.0
 const JUMP_VELOCITY = -400.0
-var gravity = 50
-var friction = 10
+var gravity = 25
 
 func _physics_process(delta: float) -> void:
 	
-	#Adds the gravity.
+	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += gravity
 
@@ -35,22 +34,15 @@ func _physics_process(delta: float) -> void:
 			$Character_Sprites.play("Jump")
 			
 
-	#This handles the player's ground movement/sprint speed.
+	#Set a Sprint Action for the player to speed up with.
+	#should smoothly switch between sprinting and walking.
 	var running := Input.is_action_pressed("Sprint")
 	var direction := Input.get_axis("Input_Left", "Input_Right")
 	if direction and not running:
-		if direction == -1:
-			velocity.x = move_toward(velocity.x, SPEED * -1, friction)
-			print(velocity.x, direction, friction)
-		elif direction == 1:
-				velocity.x = move_toward(velocity.x, SPEED, friction)
-				print(str(velocity.x) + str(direction) + str(friction))
-	elif not direction and not running:
-		velocity.x = move_toward(velocity.x, 0, friction) 
+		velocity.x = direction * SPEED
+	else:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
 	if direction and running:
-		if not velocity.x == RUN_SPEED or RUN_SPEED * -1:
-			if direction == -1:
-				velocity.x = move_toward(velocity.x, (RUN_SPEED * -1), 5)
-			elif direction == 1:
-				velocity.x = move_toward(velocity.x, RUN_SPEED, 5)
+		while not velocity.x == RUN_SPEED:
+			velocity.x += 1
 	move_and_slide()
