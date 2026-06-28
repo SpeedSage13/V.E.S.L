@@ -1,9 +1,9 @@
 extends CharacterBody2D
 
-const SPEED = 100
-const RUN_SPEED = 300.0
+const SPEED = 150
+const RUN_SPEED = 500.0
 const JUMP_VELOCITY = -400.0
-var gravity = 50
+var gravity = 20
 var friction = 10
 
 func _physics_process(delta: float) -> void:
@@ -18,22 +18,21 @@ func _physics_process(delta: float) -> void:
 
 		
 	#Handles Idle, Run, and Jump Animations.
-	if not Input.is_action_pressed("Input_Left") and not Input.is_action_pressed("Input_Right") and not Input.is_action_pressed("Input_Up") and not Input.is_action_pressed("Input_Down") and is_on_floor():
+	if not Input.is_action_pressed("Input_Left") and not Input.is_action_pressed("Input_Right") and not Input.is_action_pressed("Input_Down") and is_on_floor():
 		$Character_Sprites.play("Idle")
 	else:
-		if Input.is_action_pressed("Input_Left") and is_on_floor():
+		if Input.is_action_pressed("Input_Left") and is_on_floor_only() and velocity.x <= 300 and velocity.x >= -300:
 			$Character_Sprites.flip_h = true
 			$Character_Sprites.play("Run")
-			if not is_on_floor():
-				$Character_Sprites.stop()
-		elif Input.is_action_pressed("Input_Right") and is_on_floor():
+		elif velocity.x >= 300 or velocity.x <= -300:
+				$Character_Sprites.play("Sprint") 
+		elif Input.is_action_pressed("Input_Right") and is_on_floor() and velocity.x <= 300 and velocity.x >= -300:
 			$Character_Sprites.flip_h = false
 			$Character_Sprites.play("Run")
-			if not is_on_floor():
-				$Character_Sprites.stop()
-		elif Input.is_action_pressed("Input_Up") and is_on_floor():
+		elif velocity.x >= 300 or velocity.x <= -300:
+				$Character_Sprites.play("Sprint") 
+		elif not is_on_floor():
 			$Character_Sprites.play("Jump")
-			
 
 	#This handles the player's ground movement/sprint speed.
 	var running := Input.is_action_pressed("Sprint")
@@ -50,7 +49,9 @@ func _physics_process(delta: float) -> void:
 	if direction and running:
 		if not velocity.x == RUN_SPEED or RUN_SPEED * -1:
 			if direction == -1:
-				velocity.x = move_toward(velocity.x, (RUN_SPEED * -1), 5)
+				velocity.x = move_toward(velocity.x, (RUN_SPEED * -1), friction)
 			elif direction == 1:
-				velocity.x = move_toward(velocity.x, RUN_SPEED, 5)
+				velocity.x = move_toward(velocity.x, RUN_SPEED, friction)
+	elif not direction and running:
+		velocity.x = move_toward(velocity.x, 0, friction)
 	move_and_slide()

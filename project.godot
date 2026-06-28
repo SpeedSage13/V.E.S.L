@@ -14,10 +14,6 @@ config/name="V.E.S.L."
 run/main_scene="uid://m11s5nicnrph"
 config/features=PackedStringArray("4.6", "Forward Plus")
 
-[display]
-
-window/size/mode=2
-
 [input]
 
 Input_Left={

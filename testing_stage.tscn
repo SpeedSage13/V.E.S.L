@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://m11s5nicnrph"]
 
 [ext_resource type="PackedScene" uid="uid://dtjwbh56wmhen" path="res://player.tscn" id="1_u2yxt"]
-[ext_resource type="Texture2D" uid="uid://by8alwg3olfru" path="res://Stage Sprites/1c223ed1e8871fb269c201d2fbe7f1f1.jpg" id="2_4o7sk"]
+[ext_resource type="AudioStream" uid="uid://ck8lugnd7yxtp" path="res://Music/De Kieru.mp3" id="2_4o7sk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_561qk"]
-size = Vector2(8508.518, 466.38782)
+size = Vector2(13390.89, 466.38782)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_614tr"]
 size = Vector2(456.82864, 209)
@@ -16,7 +16,7 @@ size = Vector2(22.03928, 152.933)
 size = Vector2(37.19069, 191.5551)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4o7sk"]
-size = Vector2(138, 29)
+size = Vector2(135.44116, 31.690922)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a20ui"]
 size = Vector2(148.1618, 16)
@@ -31,7 +31,7 @@ size = Vector2(137.74493, 60.62472)
 size = Vector2(202.48537, 38.745934)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ehayc"]
-size = Vector2(194.22087, 79.62204)
+size = Vector2(194.22087, 37.14494)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bvb4n"]
 size = Vector2(89.75, 21)
@@ -42,36 +42,44 @@ size = Vector2(384, 50)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gsdj2"]
 size = Vector2(202.48672, 279.8325)
 
+[sub_resource type="SeparationRayShape2D" id="SeparationRayShape2D_4o7sk"]
+
+[sub_resource type="SeparationRayShape2D" id="SeparationRayShape2D_a20ui"]
+
 [node name="Testing_Stage" type="Node2D" unique_id=2051228136]
 scale = Vector2(0.7259784, 0.69684523)
 
 [node name="CharacterBody2D" parent="." unique_id=266382864 instance=ExtResource("1_u2yxt")]
-position = Vector2(-4719.149, 396.07074)
+position = Vector2(-2118.5203, 64.57672)
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1438568377]
-position = Vector2(-4719.1494, 397.50586)
-scale = Vector2(1.0000001, 1.0000001)
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1438568377]
+position = Vector2(0.00048828125, -3.0517578e-05)
+scale = Vector2(1.0000002, 1.0000002)
 zoom = Vector2(2.5, 2.5)
 process_callback = 0
-limit_enabled = false
 position_smoothing_enabled = true
 drag_horizontal_enabled = true
+drag_vertical_enabled = true
 drag_left_margin = 0.0
 drag_right_margin = 0.0
 editor_draw_drag_margin = true
 
 [node name="Stage" type="StaticBody2D" parent="." unique_id=1837012847]
-scale = Vector2(2.5, 2.5)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Stage" unique_id=958475615]
+stream = ExtResource("2_4o7sk")
+volume_db = -20.0
+autoplay = true
+mix_target = 1
 
 [node name="Big Floor or Something" type="CollisionShape2D" parent="Stage" unique_id=1363588821]
-position = Vector2(-793.1372, 263.76028)
-scale = Vector2(0.40000018, 0.4000002)
+position = Vector2(-1769.6125, 263.76035)
+scale = Vector2(0.4000002, 0.40000024)
 shape = SubResource("RectangleShape2D_561qk")
 
 [node name="Sprite2D" type="Sprite2D" parent="Stage/Big Floor or Something" unique_id=551623769]
-position = Vector2(-2356.888, -0.00036239624)
-scale = Vector2(12.759314, 1.5163568)
-texture = ExtResource("2_4o7sk")
+position = Vector2(-2356.888, -0.71794736)
+scale = Vector2(12.759314, 1.5211407)
 
 [node name="Wall2" type="CollisionShape2D" parent="Stage" unique_id=1511526234]
 position = Vector2(588.4145, 69.50002)
@@ -89,8 +97,8 @@ scale = Vector2(1.0000008, 1.0000008)
 shape = SubResource("RectangleShape2D_4ovcg")
 
 [node name="Platform" type="CollisionShape2D" parent="Stage" unique_id=2077899807]
-position = Vector2(294.00003, -20.000002)
-scale = Vector2(1.0000001, 1.0000001)
+position = Vector2(314.05893, -18.655506)
+scale = Vector2(1.0190928, 1.0408014)
 shape = SubResource("RectangleShape2D_4o7sk")
 
 [node name="Platform2" type="CollisionShape2D" parent="Stage" unique_id=1953907153]
@@ -114,8 +122,8 @@ scale = Vector2(1.0000025, 1.0000026)
 shape = SubResource("RectangleShape2D_fkdbe")
 
 [node name="Platform6" type="CollisionShape2D" parent="Stage" unique_id=882310660]
-position = Vector2(-1002.09625, 137.3937)
-scale = Vector2(1.0000005, 1.0000006)
+position = Vector2(-1002.09607, 158.63226)
+scale = Vector2(1.0000002, 1.0000006)
 shape = SubResource("RectangleShape2D_ehayc")
 
 [node name="OneWayGate" type="CollisionShape2D" parent="Stage" unique_id=525083190]
@@ -138,4 +146,13 @@ shape = SubResource("RectangleShape2D_gsdj2")
 [node name="Stairs" type="CollisionPolygon2D" parent="Stage" unique_id=1627122168]
 position = Vector2(0, -15.785427)
 scale = Vector2(1.0678861, 1.1141382)
-polygon = PackedVector2Array(-2.579772, 124.938515, -38.568645, 166.46452, -2.7549033, 166.46452)
+polygon = PackedVector2Array(-2.5797722, 124.93852, -94.16169, 168.7314, -2.5797722, 167.44337)
+
+[node name="Weirdly helpful thing" type="CollisionShape2D" parent="Stage" unique_id=387307711]
+position = Vector2(-2.754903, 123.413345)
+scale = Vector2(1.0678864, 1.1141385)
+shape = SubResource("SeparationRayShape2D_4o7sk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stage" unique_id=411882940]
+position = Vector2(359.51483, -53.09644)
+shape = SubResource("SeparationRayShape2D_a20ui")

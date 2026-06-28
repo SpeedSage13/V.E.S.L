@@ -16,6 +16,10 @@
 [ext_resource type="Texture2D" uid="uid://lwuath7ktc5j" path="res://Playerprites/Run_Sprites/sprite-19-6.png" id="13_2wuci"]
 [ext_resource type="Texture2D" uid="uid://ccpcfpm76qgqr" path="res://Playerprites/Run_Sprites/sprite-19-7.png" id="14_iruf7"]
 [ext_resource type="Texture2D" uid="uid://brim7q22s37ge" path="res://Playerprites/Run_Sprites/sprite-19-8.png" id="15_j5n4i"]
+[ext_resource type="Texture2D" uid="uid://bubix5xh812ca" path="res://Playerprites/Sprint_Sprites/sprite-21-1.png" id="17_pbfsw"]
+[ext_resource type="Texture2D" uid="uid://cm10cuh4wh8rw" path="res://Playerprites/Sprint_Sprites/sprite-21-2.png" id="18_5tmop"]
+[ext_resource type="Texture2D" uid="uid://wmo4dxwmhrk5" path="res://Playerprites/Sprint_Sprites/sprite-21-3.png" id="19_7ahtn"]
+[ext_resource type="Texture2D" uid="uid://be5j4busahrmd" path="res://Playerprites/Sprint_Sprites/sprite-21-4.png" id="20_7lmhl"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_sxias"]
 animations = [{
@@ -78,6 +82,23 @@ animations = [{
 "loop": true,
 "name": &"Run",
 "speed": 17.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_pbfsw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_5tmop")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_7ahtn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_7lmhl")
+}],
+"loop": true,
+"name": &"Sprint",
+"speed": 10.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ucfvk"]
@@ -92,7 +113,9 @@ script = ExtResource("1_u1c27")
 
 [node name="Character_Sprites" type="AnimatedSprite2D" parent="." unique_id=563439611]
 sprite_frames = SubResource("SpriteFrames_sxias")
-animation = &"Jump"
+animation = &"Sprint"
+frame = 1
+frame_progress = 0.026421687
 
 [node name="Floor_Collision" type="CollisionShape2D" parent="." unique_id=2111605082]
 position = Vector2(-0.5, 0.5)
