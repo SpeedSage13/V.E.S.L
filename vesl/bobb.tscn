@@ -61,9 +61,3 @@ limit_bottom = 80
 limit_smoothed = true
 position_smoothing_enabled = true
 position_smoothing_speed = 9.0
-
-[node name="ProgressBar" type="ProgressBar" parent="." unique_id=1296579044]
-offset_left = -186.0
-offset_top = -130.0
-offset_right = -66.0
-offset_bottom = -103.0

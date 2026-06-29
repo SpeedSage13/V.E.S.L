@@ -1,10 +1,11 @@
-[gd_scene format=4 uid="uid://bhhtgktvlmlqt"]
+[gd_scene format=4 uid="uid://b6hudmxaiyxtq"]
 
 [ext_resource type="PackedScene" uid="uid://daq2urx82lc54" path="res://bobb.tscn" id="1_h22ba"]
 [ext_resource type="PackedScene" uid="uid://xgudr4gvybt4" path="res://bounds.tscn" id="2_txbua"]
 [ext_resource type="Texture2D" uid="uid://dr4bmukjwjjeq" path="res://assets/sprites/world_tileset.png" id="3_7mdes"]
 [ext_resource type="PackedScene" uid="uid://qflea622h02k" path="res://scrap.tscn" id="4_4w3en"]
 [ext_resource type="PackedScene" uid="uid://d4hsd5nj0mpxy" path="res://killzone.tscn" id="5_xki4t"]
+[ext_resource type="PackedScene" uid="uid://s4s0cighu4i4" path="res://node_2d.tscn" id="6_b8y2o"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4w3en"]
 texture = ExtResource("3_7mdes")
@@ -190,3 +191,6 @@ position = Vector2(-2, 136)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="deathbox" unique_id=1277983122]
 shape = SubResource("WorldBoundaryShape2D_xki4t")
 debug_color = Color(0.99554354, 0, 0.21141085, 0.41960785)
+
+[node name="Node2D" parent="." unique_id=584474153 instance=ExtResource("6_b8y2o")]
+position = Vector2(-86, -5)

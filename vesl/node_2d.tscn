@@ -1,6 +1,7 @@
-[gd_scene format=3 uid="uid://c24pxafqkbxu6"]
+[gd_scene format=3 uid="uid://s4s0cighu4i4"]
 
 [ext_resource type="Texture2D" uid="uid://biki78qnx6uj" path="res://assets/sprites/slime_green.png" id="1_wtcfe"]
+[ext_resource type="PackedScene" uid="uid://d4hsd5nj0mpxy" path="res://killzone.tscn" id="2_0e48y"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0e48y"]
 atlas = ExtResource("1_wtcfe")
@@ -38,6 +39,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_epypp"]
+radius = 5.0
+
 [node name="Node2D" type="Node2D" unique_id=584474153]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1015953899]
@@ -45,3 +49,9 @@ position = Vector2(-2, 0)
 sprite_frames = SubResource("SpriteFrames_kdubu")
 autoplay = "default"
 frame_progress = 0.030594679
+
+[node name="Area2D" parent="." unique_id=408046917 instance=ExtResource("2_0e48y")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2021667302]
+position = Vector2(-2, 6)
+shape = SubResource("CircleShape2D_epypp")
