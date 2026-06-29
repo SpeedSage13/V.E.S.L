@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://dr4bmukjwjjeq" path="res://assets/sprites/world_tileset.png" id="3_7mdes"]
 [ext_resource type="PackedScene" uid="uid://qflea622h02k" path="res://scrap.tscn" id="4_4w3en"]
 [ext_resource type="PackedScene" uid="uid://d4hsd5nj0mpxy" path="res://killzone.tscn" id="5_xki4t"]
-[ext_resource type="PackedScene" uid="uid://s4s0cighu4i4" path="res://node_2d.tscn" id="6_b8y2o"]
+[ext_resource type="PackedScene" uid="uid://s4s0cighu4i4" path="res://slime_green.tscn" id="6_b8y2o"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4w3en"]
 texture = ExtResource("3_7mdes")
@@ -193,4 +193,4 @@ shape = SubResource("WorldBoundaryShape2D_xki4t")
 debug_color = Color(0.99554354, 0, 0.21141085, 0.41960785)
 
 [node name="Node2D" parent="." unique_id=584474153 instance=ExtResource("6_b8y2o")]
-position = Vector2(-86, -5)
+position = Vector2(-86, 4)
