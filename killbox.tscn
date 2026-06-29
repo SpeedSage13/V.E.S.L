@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bvpkwo44ou58m"]
+
+[ext_resource type="Script" uid="uid://bc1ioovv4mymy" path="res://killbox.gd" id="1_n2ocx"]
+
+[node name="Area2D" type="Area2D" unique_id=1200625053]
+script = ExtResource("1_n2ocx")
+
+[node name="Timer" type="Timer" parent="." unique_id=1410573427]
+wait_time = 0.5

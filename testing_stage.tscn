@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dtjwbh56wmhen" path="res://player.tscn" id="1_u2yxt"]
 [ext_resource type="AudioStream" uid="uid://ck8lugnd7yxtp" path="res://Music/De Kieru.mp3" id="2_4o7sk"]
+[ext_resource type="PackedScene" uid="uid://bvpkwo44ou58m" path="res://killbox.tscn" id="3_a20ui"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_561qk"]
 size = Vector2(13390.89, 466.38782)
@@ -45,6 +46,9 @@ size = Vector2(202.48672, 279.8325)
 [sub_resource type="SeparationRayShape2D" id="SeparationRayShape2D_4o7sk"]
 
 [sub_resource type="SeparationRayShape2D" id="SeparationRayShape2D_a20ui"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l6ckc"]
+size = Vector2(20, 179.33461)
 
 [node name="Testing_Stage" type="Node2D" unique_id=2051228136]
 scale = Vector2(0.7259784, 0.69684523)
@@ -156,3 +160,11 @@ shape = SubResource("SeparationRayShape2D_4o7sk")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stage" unique_id=411882940]
 position = Vector2(359.51483, -53.09644)
 shape = SubResource("SeparationRayShape2D_a20ui")
+
+[node name="killbox" parent="." unique_id=1200625053 instance=ExtResource("3_a20ui")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="killbox" unique_id=438809170]
+position = Vector2(0, 79.66732)
+scale = Vector2(1.0000001, 1.0000001)
+shape = SubResource("RectangleShape2D_l6ckc")
+debug_color = Color(1, 0, 0, 0.41960785)
