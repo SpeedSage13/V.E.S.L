@@ -2,9 +2,11 @@ extends Area2D
 
 @onready var timer: Timer = $Timer
 
-func _on_body_entered(body):
+
+func _on_timer_timeout() -> void:
+	get_tree().reload_current_scene()
+
+
+func _on_body_entered(body: Node2D) -> void:
 	print("ERR! V.E.S.L. 201983 UNRESPONSIVE")
 	timer.start()
-
-func _on_timer_timeout():
-	get_tree().reload_current_scene()
