@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://dwm1gib0jgd5q"]
+
+[ext_resource type="Script" uid="uid://wqmt6ble3p6l" path="res://slime_purple.gd" id="1_b4u1k"]
+[ext_resource type="Texture2D" uid="uid://josfddxd1817" path="res://sprites/slime_purple.png" id="1_versd"]
+[ext_resource type="PackedScene" uid="uid://bvpkwo44ou58m" path="res://killbox.tscn" id="2_h6l74"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h6l74"]
+atlas = ExtResource("1_versd")
+region = Rect2(0, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b4u1k"]
+atlas = ExtResource("1_versd")
+region = Rect2(24, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i8ikv"]
+atlas = ExtResource("1_versd")
+region = Rect2(48, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f48sa"]
+atlas = ExtResource("1_versd")
+region = Rect2(72, 24, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t1m3a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h6l74")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b4u1k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i8ikv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f48sa")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b4u1k"]
+size = Vector2(12, 12)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_b4u1k"]
+a = Vector2(-39, 9)
+b = Vector2(-25, 9)
+
+[node name="Slime_Purple" type="CharacterBody2D" unique_id=1401929508]
+script = ExtResource("1_b4u1k")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1201297474]
+sprite_frames = SubResource("SpriteFrames_t1m3a")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="Area2D" parent="." unique_id=1200625053 instance=ExtResource("2_h6l74")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2082872739]
+position = Vector2(0, 6)
+shape = SubResource("RectangleShape2D_b4u1k")
+debug_color = Color(1, 0, 0, 0.41960785)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1104472347]
+position = Vector2(32, 3)
+shape = SubResource("SegmentShape2D_b4u1k")

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://d2jv144cfttq0"]
+
+[ext_resource type="Texture2D" uid="uid://cn43we3gh245r" path="res://Start Screen Testing/icon.svg" id="1_mncer"]
+
+[node name="Node2D" type="Node2D" unique_id=92836154]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1141321849]
+position = Vector2(581.5, 323.5)
+scale = Vector2(5.5703125, 3.4921875)
+texture = ExtResource("1_mncer")

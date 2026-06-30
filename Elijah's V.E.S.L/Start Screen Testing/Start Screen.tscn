@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://c18v8efpcm6s3"]
+
+[ext_resource type="Script" uid="uid://bux0pe6vh7u0t" path="res://Start Screen Testing/button.gd" id="1_i08jl"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_vb51e"]
+
+[node name="Control" type="Control" unique_id=1775298699]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_right = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Start" type="Button" parent="." unique_id=1949454757]
+layout_mode = 0
+offset_left = 335.0
+offset_top = 38.0
+offset_right = 1107.0
+offset_bottom = 420.0
+theme_override_font_sizes/font_size = 95
+text = "Start"
+script = ExtResource("1_i08jl")
+
+[node name="Button3" type="Button" parent="." unique_id=1352408797]
+layout_mode = 0
+offset_left = 737.0
+offset_top = 452.0
+offset_right = 1109.0
+offset_bottom = 609.0
+theme_override_font_sizes/font_size = 95
+text = "Credits"
+
+[node name="Button4" type="Button" parent="." unique_id=1022493772]
+layout_mode = 0
+offset_left = 337.0
+offset_top = 452.0
+offset_right = 709.0
+offset_bottom = 609.0
+theme_override_font_sizes/font_size = 95
+text = "Settings"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1911576727]
+position = Vector2(167.875, 325.87503)
+scale = Vector2(316.25, 614.25006)
+texture = SubResource("PlaceholderTexture2D_vb51e")
+
+[connection signal="pressed" from="Start" to="Start" method="_on_start_pressed"]
