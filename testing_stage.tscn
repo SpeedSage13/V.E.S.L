@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://m11s5nicnrph"]
 
 [ext_resource type="PackedScene" uid="uid://dtjwbh56wmhen" path="res://player.tscn" id="1_u2yxt"]
-[ext_resource type="AudioStream" uid="uid://ck8lugnd7yxtp" path="res://Music/De Kieru.mp3" id="2_4o7sk"]
+[ext_resource type="AudioStream" uid="uid://ck8lugnd7yxtp" path="res://Success's stuff/Music/De Kieru.mp3" id="2_4o7sk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_561qk"]
 size = Vector2(13390.89, 466.38782)
