@@ -1,7 +1,2 @@
-res://testing_stage.tscn
-res://slime_purple.tscn
-res://slime_purple.gd
-res://player.tscn
 res://slime_p.gd
-res://slime_p.tscn
-res://killbox.tscn
+res://StartScreen/start_screen.tscn

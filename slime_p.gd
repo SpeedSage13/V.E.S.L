@@ -22,6 +22,6 @@ func _process(delta: float) -> void:
 	if ray_cast_down.is_colliding():
 		gravity = 0
 	else:
-		gravity = 3d
+		gravity = 3
 	position.x += direction * 60 * delta
 	position.y += gravity * 60 * delta
