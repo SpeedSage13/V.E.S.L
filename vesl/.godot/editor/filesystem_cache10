@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1782696782
+::res://::1782697099
 bobb.gd::GDScript::-1::1782696162::0::1::::<>CharacterBody2D<><>0<>0<><>::
 bobb.tscn::PackedScene::7193968099790391817::1782696162::0::1::::<><><>0<>0<><>::uid://bo84tr2a634t8::::res://bobb.gd<>uid://braqhau5ba50e::::res://assets/sprites/knight.png
 bounds.tscn::PackedScene::1627950305434048695::1782696162::0::1::::<><><>0<>0<><>::
@@ -20,7 +20,7 @@ PixelOperator8-Bold.ttf::FontFile::8041805581657847596::1782696162::1782696162::
 PixelOperator8.ttf::FontFile::7400186269057330652::1782696162::1782696162::1::::<><><>0<>0<>712f5cffd1eb2d312620a5cdf5ffc35b<>res://.godot/imported/PixelOperator8.ttf-6f9f01766aff16f52046b880ffb8d367.fontdata::
 ::res://assets/music/::1782696162
 time_for_adventure.mp3::AudioStreamMP3::7799484301145263308::1782696162::1782696162::1::::<><><>0<>0<>90f4bb6d167e27a52fc4d0a0995c83aa<>res://.godot/imported/time_for_adventure.mp3-b8a49ae1cfc83b211be9d82e6e985655.mp3str::
-::res://assets/sounds/::1782696162
+::res://assets/sounds/::1782696784
 coin.wav::AudioStreamWAV::6105725544609397715::1782696162::1782696162::1::::<><><>0<>0<>b0a32de7239f3bb7a747b8fd653ba0c5<>res://.godot/imported/coin.wav-9081ee1c6d81d9c34d08bc916297b892.sample::
 explosion.wav::AudioStreamWAV::1352320601298033684::1782696162::1782696162::1::::<><><>0<>0<>3ff2f665d6df423f821dbe4424a871ff<>res://.godot/imported/explosion.wav-52e05e8d4b6600106c8dde082c90f915.sample::
 hurt.wav::AudioStreamWAV::4002117223916307712::1782696162::1782696162::1::::<><><>0<>0<>fdf65719278cc553c933c179dea44ac4<>res://.godot/imported/hurt.wav-792baeb99505afd6a1496d4e4330b023.sample::
