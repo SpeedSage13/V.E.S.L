@@ -1,0 +1,7 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1782782169
+::res://Start Screen Testing/::1782782169
+button.gd::GDScript::3839223215471976069::1782781757::0::1::::<>Button<><>0<>0<><>::
+icon.svg::CompressedTexture2D::5746902906442712201::1782700458::1782782163::1::::<><><>0<>0<>62187f48a9e644c22a3e4954f4b91298<>res://.godot/imported/icon.svg-d87d5f3744a3ee38af1bbe2ed61c250d.ctex::
+Start Screen.tscn::PackedScene::6667209974408108828::1782782159::0::1::::<><><>0<>0<><>::uid://bux0pe6vh7u0t::::res://Start Screen Testing/button.gd
+TestScene.tscn::PackedScene::9074263284657142637::1782782162::0::1::::<><><>0<>0<><>::uid://cn43we3gh245r::::res://Start Screen Testing/icon.svg
