@@ -1,0 +1,4 @@
+res://testing_stage.tscn
+res://player.tscn
+res://StartScreen/start_button.gd
+res://StartScreen/start_screen.tscn
