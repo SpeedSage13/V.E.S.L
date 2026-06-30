@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://m11s5nicnrph"]
 
-[ext_resource type="PackedScene" uid="uid://dtjwbh56wmhen" path="res://player.tscn" id="1_u2yxt"]
-[ext_resource type="AudioStream" uid="uid://ck8lugnd7yxtp" path="res://Music/De Kieru.mp3" id="2_4o7sk"]
+[ext_resource type="PackedScene" uid="uid://dtjwbh56wmhen" path="res://Success's stuff/player.tscn" id="1_u2yxt"]
+[ext_resource type="AudioStream" uid="uid://ck8lugnd7yxtp" path="res://Success's stuff/Music/De Kieru.mp3" id="2_4o7sk"]
 [ext_resource type="PackedScene" uid="uid://bvpkwo44ou58m" path="res://killbox.tscn" id="3_a20ui"]
 [ext_resource type="Texture2D" uid="uid://bfopswd1b2vj1" path="res://sprites/world_tileset.png" id="4_bvb4n"]
 [ext_resource type="PackedScene" uid="uid://dexa1qa1hecev" path="res://slime_p.tscn" id="5_d6788"]
