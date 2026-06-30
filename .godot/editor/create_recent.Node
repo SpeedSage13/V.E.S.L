@@ -1,8 +1,8 @@
-AnimatedSprite2D
-CharacterBody2D
 CollisionShape2D
+AnimatedSprite2D
+Node2D
+CharacterBody2D
 TileMapLayer
 TileMap
 Timer
-Node2D
 Area2D
