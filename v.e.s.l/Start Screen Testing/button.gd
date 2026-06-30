@@ -7,8 +7,9 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass
-func _on_button_pressed():
+
+func _on_start_pressed():
 	print("hello world")
 	get_tree().change_scene_to_file("res://Start Screen Testing/TestScene.tscn")
