@@ -1,2 +1,5 @@
-res://slime_p.gd
+res://slime_p.tscn
 res://StartScreen/start_screen.tscn
+res://StartScreen/start_button.gd
+res://slime_p.gd
+res://Success's stuff/player.tscn
