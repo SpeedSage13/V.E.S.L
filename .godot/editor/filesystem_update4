@@ -1,5 +1,2 @@
 res://UI's/PauseMenu/PauseMenu.tscn
-res://Success's stuff/character_body_2d.gd
-res://UI's/PauseMenu/pause_menu.gd
-res://Success's stuff/testing_stage.tscn
-res://UI's/StartScreen/start_screen.tscn
+res://UI's/PauseMenu/PauseMenu.gdshader

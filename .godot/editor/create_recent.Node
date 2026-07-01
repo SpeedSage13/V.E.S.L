@@ -1,7 +1,9 @@
+AnimationPlayer
+ColorRect
+PanelContainer
 CanvasLayer
 Container
 Timer
-ColorRect
 Sprite2D
 Panel
 Button
@@ -11,5 +13,3 @@ AnimatedSprite2D
 Node2D
 CharacterBody2D
 TileMapLayer
-TileMap
-Area2D

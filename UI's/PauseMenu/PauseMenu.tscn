@@ -1,6 +1,48 @@
 [gd_scene format=3 uid="uid://ci8x5xr5kfh0v"]
 
 [ext_resource type="Script" uid="uid://l31ddaybsfiq" path="res://UI's/PauseMenu/pause_menu.gd" id="1_nj00c"]
+[ext_resource type="Shader" uid="uid://cm5ik1qpjo0vs" path="res://UI's/PauseMenu/PauseMenu.gdshader" id="2_8drn5"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3tyj3"]
+shader = ExtResource("2_8drn5")
+shader_parameter/lod = 0.8470000402325
+
+[sub_resource type="Animation" id="Animation_8drn5"]
+resource_name = "Blur"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/lod")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.26666668),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.8470000402325]
+}
+
+[sub_resource type="Animation" id="Animation_3tyj3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/lod")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.8470000402325]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_eyv1r"]
+_data = {
+&"Blur": SubResource("Animation_8drn5"),
+&"RESET": SubResource("Animation_3tyj3")
+}
 
 [node name="Control" type="Control" unique_id=435882582]
 process_mode = 3
@@ -13,6 +55,18 @@ offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_nj00c")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=490629856]
+material = SubResource("ShaderMaterial_3tyj3")
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 650.0
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=253285422]
+layout_mode = 0
+offset_left = 320.0
+offset_right = 906.0
+offset_bottom = 649.0
 
 [node name="Save&Quit" type="Button" parent="." unique_id=1803722875]
 layout_mode = 0
@@ -53,6 +107,10 @@ offset_bottom = 617.0
 theme_override_colors/icon_normal_color = Color(0.6509804, 0.2509804, 0.22745098, 1)
 theme_override_colors/icon_hover_color = Color(0.6509804, 0.2627451, 0.2, 1)
 text = "Restart"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1336857203]
+root_node = NodePath("../ColorRect")
+libraries/ = SubResource("AnimationLibrary_eyv1r")
 
 [connection signal="pressed" from="Save&Quit" to="." method="_on_save_quit_pressed"]
 [connection signal="pressed" from="Settings" to="." method="_on_settings_pressed"]
