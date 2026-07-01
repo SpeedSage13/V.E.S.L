@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://ck8lugnd7yxtp"
-path="res://.godot/imported/De Kieru.mp3-ed3b8fd2a36f3ae5f83abeeffe462f8b.mp3str"
+path="res://.godot/imported/De Kieru.mp3-3fef52a35b4d5e8ad0b05ec70114bfa1.mp3str"
 
 [deps]
 
-source_file="res://Music/De Kieru.mp3"
-dest_files=["res://.godot/imported/De Kieru.mp3-ed3b8fd2a36f3ae5f83abeeffe462f8b.mp3str"]
+source_file="res://Success's stuff/Music/De Kieru.mp3"
+dest_files=["res://.godot/imported/De Kieru.mp3-3fef52a35b4d5e8ad0b05ec70114bfa1.mp3str"]
 
 [params]
 
