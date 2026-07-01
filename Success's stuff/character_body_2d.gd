@@ -7,8 +7,10 @@ var gravity = 20
 var friction = 10
 var max_health = 100
 var health = max_health
-
+var attacking := false
 @onready var healthbar: ProgressBar = $"../healthbar"
+@onready var attack_hitbox: Area2D = $"attack hitbox"
+@onready var sprites: AnimatedSprite2D = $Character_Sprites
 
 func _physics_process(delta: float) -> void:
 	
@@ -19,8 +21,8 @@ func _physics_process(delta: float) -> void:
 	# Handle jump
 	if Input.is_action_just_pressed("Input_Up") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
-
-		
+	if Input.is_action_just_pressed("Attack_Prim") and not attacking:
+		attackprim()
 	#Handles Idle, Run, and Jump Animations.
 	if not Input.is_action_pressed("Input_Left") and not Input.is_action_pressed("Input_Right") and not Input.is_action_pressed("Input_Down") and is_on_floor():
 		$Character_Sprites.play("Idle")
@@ -59,6 +61,14 @@ func _physics_process(delta: float) -> void:
 	elif not direction and running:
 		velocity.x = move_toward(velocity.x, 0, friction)
 	move_and_slide()
+	
+func attackprim():
+	attacking = true
+	attack_hitbox.monitoring = true
+	sprites.play("Sprint")
+	await sprites.animation_finished
+	attack_hitbox.monitoring = false
+	attacking = false
 	
 func take_damage_player(amount: int) -> void:
 	health -= amount

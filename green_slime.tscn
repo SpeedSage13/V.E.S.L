@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cl4ineivkrpfv" path="res://sprites/slime_green.png" id="1_ee1ex"]
 [ext_resource type="Script" uid="uid://o5tt5o2iks55" path="res://green_slime.gd" id="1_vqynf"]
+[ext_resource type="PackedScene" uid="uid://bvpkwo44ou58m" path="res://killbox.tscn" id="3_em2wj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ee1ex"]
 size = Vector2(10, 12)
@@ -48,6 +49,9 @@ size = Vector2(14, 12)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_em2wj"]
 size = Vector2(10, 0.5)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ysx1p"]
+size = Vector2(14, 12)
+
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=1703219273]
 script = ExtResource("1_vqynf")
 
@@ -73,6 +77,13 @@ debug_color = Color(1, 0, 1, 0.41960785)
 position = Vector2(0, 10)
 shape = SubResource("RectangleShape2D_em2wj")
 debug_color = Color(1, 1, 0, 1)
+
+[node name="Area2D" parent="." unique_id=1200625053 instance=ExtResource("3_em2wj")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=671629438]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_ysx1p")
+debug_color = Color(1, 0, 0, 0.67058825)
 
 [connection signal="body_entered" from="wallcheck" to="." method="_on_wallcheck_body_entered"]
 [connection signal="body_shape_exited" from="floorcheck" to="." method="_on_floorcheck_body_shape_exited"]
