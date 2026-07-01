@@ -4,6 +4,8 @@ const SPEED = 60
 
 var direction = 1
 var gravity = 0
+var max_enemy_health: = 20
+var enemy_health: = max_enemy_health
 @onready var ray_cast_right: RayCast2D = $RayCastRight
 @onready var ray_cast_left: RayCast2D = $RayCastLeft
 @onready var ray_cast_down: RayCast2D = $RayCastDown
@@ -12,6 +14,10 @@ var gravity = 0
 func _ready() -> void:
 	pass # Replace with function body.
 
+func take_damage(amount):
+	enemy_health -= amount
+	if enemy_health <= 0:
+		get_tree().reload_current_scene()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
