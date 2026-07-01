@@ -1,7 +1,9 @@
+CanvasLayer
+Container
+Timer
 ColorRect
 Sprite2D
 Panel
-Container
 Button
 RayCast2D
 CollisionShape2D
@@ -10,5 +12,4 @@ Node2D
 CharacterBody2D
 TileMapLayer
 TileMap
-Timer
 Area2D

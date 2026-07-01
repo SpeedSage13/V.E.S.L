@@ -55,6 +55,3 @@ func _physics_process(delta: float) -> void:
 	elif not direction and running:
 		velocity.x = move_toward(velocity.x, 0, friction)
 	move_and_slide()
-func _process(delta):
-	if Input.is_action_pressed("Input_quit"):
-		get_tree().change_scene_to_file("res://UI's/PauseMenu/PauseMenu.tscn")

@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bvpkwo44ou58m" path="res://killbox.tscn" id="3_a20ui"]
 [ext_resource type="Texture2D" uid="uid://bfopswd1b2vj1" path="res://sprites/world_tileset.png" id="4_bvb4n"]
 [ext_resource type="PackedScene" uid="uid://dexa1qa1hecev" path="res://slime_p.tscn" id="5_d6788"]
+[ext_resource type="PackedScene" uid="uid://ci8x5xr5kfh0v" path="res://UI's/PauseMenu/PauseMenu.tscn" id="6_xfut1"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_bvb4n"]
 distance = -198.03539
@@ -212,3 +213,7 @@ tile_set = SubResource("TileSet_614tr")
 
 [node name="slime_p" parent="." unique_id=920762618 instance=ExtResource("5_d6788")]
 position = Vector2(-1668.0939, 149.24405)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1736913003]
+
+[node name="Control" parent="CanvasLayer" unique_id=435882582 instance=ExtResource("6_xfut1")]
