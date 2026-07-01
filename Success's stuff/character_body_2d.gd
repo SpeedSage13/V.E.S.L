@@ -5,6 +5,10 @@ const RUN_SPEED = 500.0
 const JUMP_VELOCITY = -400.0
 var gravity = 20
 var friction = 10
+var max_health = 100
+var health = max_health
+
+@onready var healthbar: ProgressBar = $"../healthbar"
 
 func _physics_process(delta: float) -> void:
 	
@@ -55,3 +59,10 @@ func _physics_process(delta: float) -> void:
 	elif not direction and running:
 		velocity.x = move_toward(velocity.x, 0, friction)
 	move_and_slide()
+	
+func take_damage_player(amount: int) -> void:
+	health -= amount
+	health = clamp(health, 0, max_health)
+	if healthbar:
+		healthbar.value=health
+	emit_signal("health_down")
