@@ -44,7 +44,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vqynf"]
-size = Vector2(14, 12)
+size = Vector2(14, 4)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_em2wj"]
 size = Vector2(10, 0.5)
@@ -67,7 +67,6 @@ autoplay = "default"
 [node name="wallcheck" type="Area2D" parent="." unique_id=770989073]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="wallcheck" unique_id=1883303046]
-position = Vector2(0, 4)
 shape = SubResource("RectangleShape2D_vqynf")
 debug_color = Color(1, 0, 1, 0.41960785)
 

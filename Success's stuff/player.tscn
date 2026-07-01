@@ -20,7 +20,6 @@
 [ext_resource type="Texture2D" uid="uid://cm10cuh4wh8rw" path="res://Success's stuff/Playerprites/Sprint_Sprites/sprite-21-2.png" id="18_5tmop"]
 [ext_resource type="Texture2D" uid="uid://wmo4dxwmhrk5" path="res://Success's stuff/Playerprites/Sprint_Sprites/sprite-21-3.png" id="19_7ahtn"]
 [ext_resource type="Texture2D" uid="uid://be5j4busahrmd" path="res://Success's stuff/Playerprites/Sprint_Sprites/sprite-21-4.png" id="20_7lmhl"]
-[ext_resource type="Script" uid="uid://dru2u5erkykk8" path="res://Success's stuff/attack_hitbox.gd" id="21_r2aqn"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_sxias"]
 animations = [{
@@ -108,9 +107,6 @@ size = Vector2(27, 35)
 [sub_resource type="CircleShape2D" id="CircleShape2D_6ct3r"]
 radius = 12.0415945
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_06vgn"]
-size = Vector2(20, 34)
-
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=266382864]
 collision_layer = 2
 slide_on_ceiling = false
@@ -130,11 +126,3 @@ shape = SubResource("RectangleShape2D_ucfvk")
 position = Vector2(0, 2)
 shape = SubResource("CircleShape2D_6ct3r")
 debug_color = Color(0.9911409, 0, 0.27534872, 0.41960785)
-
-[node name="attack hitbox" type="Area2D" parent="." unique_id=2048801800]
-script = ExtResource("21_r2aqn")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="attack hitbox" unique_id=2131020391]
-position = Vector2(28, 0)
-shape = SubResource("RectangleShape2D_06vgn")
-debug_color = Color(1, 0, 1, 0.41960785)
