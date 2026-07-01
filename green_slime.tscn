@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://c88jhufjdj71r"]
 
 [ext_resource type="Texture2D" uid="uid://cl4ineivkrpfv" path="res://sprites/slime_green.png" id="1_ee1ex"]
+[ext_resource type="Script" uid="uid://o5tt5o2iks55" path="res://green_slime.gd" id="1_vqynf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ee1ex"]
-size = Vector2(14, 13)
+size = Vector2(10, 12)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vqynf"]
 atlas = ExtResource("1_ee1ex")
@@ -42,15 +43,16 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vqynf"]
-size = Vector2(10, 12)
+size = Vector2(14, 12)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_em2wj"]
-size = Vector2(14, 0.5)
+size = Vector2(10, 0.5)
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=1703219273]
+script = ExtResource("1_vqynf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1213454020]
-position = Vector2(0, 3.5)
+position = Vector2(0, 4)
 shape = SubResource("RectangleShape2D_ee1ex")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=493106409]
@@ -68,6 +70,9 @@ debug_color = Color(1, 0, 1, 0.41960785)
 [node name="floorcheck" type="Area2D" parent="." unique_id=1977389416]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="floorcheck" unique_id=578679274]
-position = Vector2(0, 10.75)
+position = Vector2(0, 10)
 shape = SubResource("RectangleShape2D_em2wj")
 debug_color = Color(1, 1, 0, 1)
+
+[connection signal="body_entered" from="wallcheck" to="." method="_on_wallcheck_body_entered"]
+[connection signal="body_shape_exited" from="floorcheck" to="." method="_on_floorcheck_body_shape_exited"]
