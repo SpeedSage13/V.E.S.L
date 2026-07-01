@@ -1,0 +1,13 @@
+res://testing_stage.tscn
+res://StartScreen/start_button.gd
+res://slime_p.tscn
+res://killbox.gd
+res://Success's stuff/player.tscn
+res://Success's stuff/Playerprites/character_body_2d.gd
+res://killbox.tscn
+res://Success's stuff/character_body_2d.gd
+res://progress_bar.gd
+res://Success's stuff/attack_hitbox.gd
+res://slime_p.gd
+res://green_slime.tscn
+res://green_slime.gd
