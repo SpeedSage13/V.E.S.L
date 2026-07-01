@@ -1,79 +1,18 @@
 63f7b34db8d8cdea90c76aacccf841ec
-<<<<<<< HEAD
-::res://::1782882263
-killbox.gd::GDScript::2580983698392712480::1782802966::0::1::::<>Area2D<><>0<>0<><>::
-killbox.tscn::PackedScene::3891999305259638086::1782802966::0::1::::<><><>0<>0<><>::uid://bc1ioovv4mymy::::res://killbox.gd
-slime_p.gd::GDScript::556005950699213565::1782802966::0::1::::<>Node2D<><>0<>0<><>::
-slime_p.tscn::PackedScene::7487545386180772213::1782802966::0::1::::<><><>0<>0<><>::uid://h6llpkt6tfpd::::res://slime_p.gd<>uid://josfddxd1817::::res://sprites/slime_purple.png<>uid://bvpkwo44ou58m::::res://killbox.tscn
-slime_purple.gd::GDScript::1577948768373972261::1782802966::0::1::::<>CharacterBody2D<><>0<>0<><>::
-slime_purple.tscn::PackedScene::8729778923619848888::1782802966::0::1::::<><><>0<>0<><>::uid://wqmt6ble3p6l::::res://slime_purple.gd<>uid://josfddxd1817::::res://sprites/slime_purple.png<>uid://bvpkwo44ou58m::::res://killbox.tscn
-::res://sprites/::1782803015
-coin.png::CompressedTexture2D::1462572863546675854::1782802966::1782803015::1::::<><><>0<>0<>8a1ee3909f8d0ccbae8d6e844928f631<>res://.godot/imported/coin.png-54d5e156d7891d9603a51f76f85b4fd9.ctex::
-fruit.png::CompressedTexture2D::8851131367787164521::1782802966::1782803015::1::::<><><>0<>0<>81541127605bc79e81c7710cee241ecf<>res://.godot/imported/fruit.png-33b325b6fecf0ae3ad310b50fcb64d04.ctex::
-knight.png::CompressedTexture2D::5565942734827579683::1782802966::1782803015::1::::<><><>0<>0<>81ff226990f0b4a864377727f002d4f2<>res://.godot/imported/knight.png-c78c026709c2736971ffc0a39338542e.ctex::
-platforms.png::CompressedTexture2D::3469606591386730783::1782802966::1782803015::1::::<><><>0<>0<>7c0b3de93b665b89362d8b5793cc6342<>res://.godot/imported/platforms.png-fdcd4bebb7ecd5fd1592abe643f480f5.ctex::
-slime_green.png::CompressedTexture2D::5605294776955216067::1782802966::1782803015::1::::<><><>0<>0<>e2540f27a526284aaeb0b45bee8a50d3<>res://.godot/imported/slime_green.png-d23936e8ad50c1f02045d1fdaace456b.ctex::
-slime_purple.png::CompressedTexture2D::661702879392997560::1782802966::1782803015::1::::<><><>0<>0<>4aa2a40ad54d7fb85ccea40adf78be57<>res://.godot/imported/slime_purple.png-3d9e552c3e3aeb2a7f3441f746b4c24b.ctex::
-world_tileset.png::CompressedTexture2D::2767210250953744520::1782802966::1782803015::1::::<><><>0<>0<>23f48923a65125d0ad96f6e412c0756d<>res://.godot/imported/world_tileset.png-8b3dc0eb27b141bfe097cdfc0d6186a3.ctex::
-::res://Success's stuff/::1782872831
-animated_sprite_2d.gd::GDScript::5541898806146789435::1782802966::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
-CallSpriteImage.gd::GDScript::7317103879876621988::1782802966::0::1::::<>RefCounted<><>0<>0<><>::
-character_body_2d.gd::GDScript::3688761218886401388::1782872718::0::1::::<>CharacterBody2D<><>0<>0<><>::
-player.tscn::PackedScene::8512767455069184465::1782802966::0::1::::<><><>0<>0<><>::uid://bss4mgihbqfdc::::res://Success's stuff/character_body_2d.gd<>uid://bk0cyl4olql57::::res://Success's stuff/Playerprites/Idle_Sprites/sprite-1-1(1).png<>uid://crkoinky8ujmf::::res://Success's stuff/Playerprites/Idle_Sprites/sprite-1-2(1).png<>uid://c65kpiubdb2tc::::res://Success's stuff/Playerprites/Idle_Sprites/sprite-1-3(1).png<>uid://dxhaf3joty437::::res://Success's stuff/Playerprites/Idle_Sprites/sprite-1-4(1).png<>uid://dbmo55cdgmoom::::res://Success's stuff/Playerprites/Idle_Sprites/sprite-1-5(1).png<>uid://d08tvfj4w6dyq::::res://Success's stuff/Playerprites/Idle_Sprites/sprite-1-6(1).png<>uid://c5myxenji5pn2::::res://Success's stuff/Playerprites/Run_Sprites/sprite-19-1.png<>uid://b10irqwwtnl0k::::res://Success's stuff/Playerprites/Jump_Sprites/sprite-27-4.png<>uid://barcbcxjlfm0g::::res://Success's stuff/Playerprites/Run_Sprites/sprite-19-2.png<>uid://bim4m8u17ddai::::res://Success's stuff/Playerprites/Run_Sprites/sprite-19-3.png<>uid://wjq3me566kba::::res://Success's stuff/Playerprites/Run_Sprites/sprite-19-4.png<>uid://cqj24w1tnbsex::::res://Success's stuff/Playerprites/Run_Sprites/sprite-19-5.png<>uid://lwuath7ktc5j::::res://Success's stuff/Playerprites/Run_Sprites/sprite-19-6.png<>uid://ccpcfpm76qgqr::::res://Success's stuff/Playerprites/Run_Sprites/sprite-19-7.png<>uid://brim7q22s37ge::::res://Success's stuff/Playerprites/Run_Sprites/sprite-19-8.png<>uid://bubix5xh812ca::::res://Success's stuff/Playerprites/Sprint_Sprites/sprite-21-1.png<>uid://cm10cuh4wh8rw::::res://Success's stuff/Playerprites/Sprint_Sprites/sprite-21-2.png<>uid://wmo4dxwmhrk5::::res://Success's stuff/Playerprites/Sprint_Sprites/sprite-21-3.png<>uid://be5j4busahrmd::::res://Success's stuff/Playerprites/Sprint_Sprites/sprite-21-4.png
-README.md::TextFile::-1::1782802966::0::1::::<><><>0<>0<><>::
-run_sprites.gd::GDScript::5089470026847572775::1782802966::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
-testing_stage.tscn::PackedScene::897552327513807889::1782872831::0::1::::<><><>0<>0<><>::uid://dtjwbh56wmhen::::res://Success's stuff/player.tscn<>uid://ck8lugnd7yxtp::::res://Success's stuff/Music/De Kieru.mp3<>uid://bvpkwo44ou58m::::res://killbox.tscn<>uid://bfopswd1b2vj1::::res://sprites/world_tileset.png<>uid://dexa1qa1hecev::::res://slime_p.tscn<>uid://ci8x5xr5kfh0v::::res://UI's/PauseMenu/PauseMenu.tscn
-::res://Success's stuff/Music/::1782802966
-De Kieru.mp3::AudioStreamMP3::5543558207851625425::1782802966::1782802966::1::::<><><>0<>0<>cc837cc21152ea36c4d8d8d289bf269f<>res://.godot/imported/De Kieru.mp3-3fef52a35b4d5e8ad0b05ec70114bfa1.mp3str::
-::res://Success's stuff/new-game-project/::1782782333
-::res://Success's stuff/Playerprites/::1782802966
-character_body_2d.gd::GDScript::7795935346974659408::1782802966::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://Success's stuff/Playerprites/Idle_Sprites/::1782802966
-sprite-1-1(1).png::CompressedTexture2D::3140083480171787640::1782802966::1782802966::1::::<><><>0<>0<>de68110fa98d236b4ef74f02a9c91f43<>res://.godot/imported/sprite-1-1(1).png-8250e3a575b1b338b8130156b8e160a9.ctex::
-sprite-1-2(1).png::CompressedTexture2D::5987560510410262257::1782802966::1782802966::1::::<><><>0<>0<>a55c6b6b78492b1bb3675cb5e27b71ce<>res://.godot/imported/sprite-1-2(1).png-44522c9df63e4d79a96e2ff639b433e8.ctex::
-sprite-1-3(1).png::CompressedTexture2D::7011261260755642444::1782802966::1782802966::1::::<><><>0<>0<>b39bed2d8dbb54ad222f92491c5828e4<>res://.godot/imported/sprite-1-3(1).png-40ac93f2c241dc2ec080f846fc303608.ctex::
-sprite-1-4(1).png::CompressedTexture2D::8788066513221498812::1782802966::1782802966::1::::<><><>0<>0<>9431e72eb49e6ec2b6651e6f25dc69a4<>res://.godot/imported/sprite-1-4(1).png-502a69e2e4d4c6c25a413005a53d4603.ctex::
-sprite-1-5(1).png::CompressedTexture2D::7255128618416856000::1782802966::1782802966::1::::<><><>0<>0<>9ec156fe765187c7edec057fb3947f8f<>res://.godot/imported/sprite-1-5(1).png-36eb1e919b59ad545b92a12c5e12243d.ctex::
-sprite-1-6(1).png::CompressedTexture2D::8983299010316890884::1782802966::1782802966::1::::<><><>0<>0<>ca2ed52d2155b65cefddcb5d0c2f229e<>res://.godot/imported/sprite-1-6(1).png-bee20db4ee01cef89c985c5a73f9911d.ctex::
-::res://Success's stuff/Playerprites/Jump_Sprites/::1782802966
-sprite-27-4.png::CompressedTexture2D::4263457031956746080::1782802966::1782802966::1::::<><><>0<>0<>45d24fbe246b5e82b0fce3f731e400c9<>res://.godot/imported/sprite-27-4.png-63167fb29ed745ddf3907dbe66522433.ctex::
-::res://Success's stuff/Playerprites/Run_Sprites/::1782802966
-sprite-19-1.png::CompressedTexture2D::6904777721258763105::1782802966::1782802966::1::::<><><>0<>0<>3d82493ef5d88ac028ecf3d82d8b034a<>res://.godot/imported/sprite-19-1.png-15e21f51879c67f2b8d99fe200b634ba.ctex::
-sprite-19-2.png::CompressedTexture2D::2421638466292586688::1782802966::1782802966::1::::<><><>0<>0<>f695e1e8637babb91db5ebb25a1a1dc4<>res://.godot/imported/sprite-19-2.png-62e2f248e7fa646ea360f130aa3612d6.ctex::
-sprite-19-3.png::CompressedTexture2D::2974487953554011884::1782802966::1782802966::1::::<><><>0<>0<>de9cf6ea8a06025b6120bde2b9d76fe4<>res://.godot/imported/sprite-19-3.png-d5ee445531683c11458d1a7dcf8a9965.ctex::
-sprite-19-4.png::CompressedTexture2D::1563756071801989490::1782802966::1782802966::1::::<><><>0<>0<>74f4344aee036b48b84055e1fdf88e5c<>res://.godot/imported/sprite-19-4.png-0b371df0ad5de78db5715c90f278c490.ctex::
-sprite-19-5.png::CompressedTexture2D::5916134608768518431::1782802966::1782802966::1::::<><><>0<>0<>0e399a5b3fac797d72cfda25eb7761bf<>res://.godot/imported/sprite-19-5.png-e0c7656be2f3c7d376335b8c87a04436.ctex::
-sprite-19-6.png::CompressedTexture2D::818708940688331269::1782802966::1782802966::1::::<><><>0<>0<>a28df45be91d2aa52a091ec120ccbf09<>res://.godot/imported/sprite-19-6.png-5e369623c4a5507c03eba600b41161e2.ctex::
-sprite-19-7.png::CompressedTexture2D::4944315891812122425::1782802966::1782802966::1::::<><><>0<>0<>26439b05139592e904c14c6ae0ae20be<>res://.godot/imported/sprite-19-7.png-fb6c0615140dc2032db5b05b7581495f.ctex::
-sprite-19-8.png::CompressedTexture2D::3596932680225553776::1782802966::1782802966::1::::<><><>0<>0<>6655581ce343d0b20dcce67e7263a952<>res://.godot/imported/sprite-19-8.png-a6eb65106ae64e7d6bb689e24188d2e2.ctex::
-::res://Success's stuff/Playerprites/Sprint_Sprites/::1782802966
-sprite-21-1.png::CompressedTexture2D::3792790355003958960::1782802966::1782802966::1::::<><><>0<>0<>0cef75a432bad0810ce8070b961e905b<>res://.godot/imported/sprite-21-1.png-22410ca533208c955b1ab8edb056e19a.ctex::
-sprite-21-2.png::CompressedTexture2D::5670303871683090644::1782802966::1782802966::1::::<><><>0<>0<>5398a73c8ee262892bbb6174bff4489f<>res://.godot/imported/sprite-21-2.png-0a175882d135c7707d43d601544052d8.ctex::
-sprite-21-3.png::CompressedTexture2D::1569829113123864750::1782802966::1782802966::1::::<><><>0<>0<>a07d4c1c7fe037f8a61c3a9f8540d4ce<>res://.godot/imported/sprite-21-3.png-e01a242131262fd9d92dc71bb5a70caf.ctex::
-sprite-21-4.png::CompressedTexture2D::2729705716062735319::1782802966::1782802966::1::::<><><>0<>0<>bd513197615c4dccd71f7e099947affe<>res://.godot/imported/sprite-21-4.png-4b56ff3b8a202127a5550603bd5795a3.ctex::
-::res://Success's stuff/Stage Sprites/::1782802966
-1c223ed1e8871fb269c201d2fbe7f1f1.jpg::CompressedTexture2D::4139098206696673698::1782802966::1782802966::1::::<><><>0<>0<>e298ab02db731036cb79a890dc99ec86<>res://.godot/imported/1c223ed1e8871fb269c201d2fbe7f1f1.jpg-3bc074fb5544a6de89e8ff872381932b.ctex::
-::res://UI's/::1782803317
-::res://UI's/PauseMenu/::1782874093
-PauseMenu.gdshader::Shader::5677543808563677344::1782874019::0::1::::<><><>0<>0<><>::
-PauseMenu.tscn::PackedScene::5403927882700569291::1782874093::0::1::::<><><>0<>0<><>::uid://l31ddaybsfiq::::res://UI's/PauseMenu/pause_menu.gd<>uid://cm5ik1qpjo0vs::::res://UI's/PauseMenu/PauseMenu.gdshader
-pause_menu.gd::GDScript::831464014988223188::1782872800::0::1::::<>Control<><>0<>0<><>::
-::res://UI's/StartScreen/::1782872581
-start_button.gd::GDScript::4915712112300977504::1782802966::0::1::::<>Button<><>0<>0<><>::
-start_screen.tscn::PackedScene::6860373855287576311::1782872581::0::1::::<><><>0<>0<><>::uid://ccbhcbx3qbj8s::::res://UI's/StartScreen/start_button.gd
-::res://v.e.s.l/::1782802937
-=======
-::res://::1782863628
-killbox.gd::GDScript::2580983698392712480::1782777899::0::1::::<>Area2D<><>0<>0<><>::
-killbox.tscn::PackedScene::3891999305259638086::1782786944::0::1::::<><><>0<>0<><>::uid://bc1ioovv4mymy::::res://killbox.gd
-slime_p.gd::GDScript::556005950699213565::1782826782::0::1::::<>Node2D<><>0<>0<><>::
-slime_p.tscn::PackedScene::7487545386180772213::1782826824::0::1::::<><><>0<>0<><>::uid://h6llpkt6tfpd::::res://slime_p.gd<>uid://josfddxd1817::::res://sprites/slime_purple.png<>uid://bvpkwo44ou58m::::res://killbox.tscn
+::res://::1782948195
+green_slime.gd::GDScript::1045764295066630674::1782888503::0::1::::<>CharacterBody2D<><>0<>0<><>::
+green_slime.tscn::PackedScene::7157757685421820253::1782888503::0::1::::<><><>0<>0<><>::uid://cl4ineivkrpfv::::res://sprites/slime_green.png<>uid://o5tt5o2iks55::::res://green_slime.gd<>uid://bvpkwo44ou58m::::res://killbox.tscn
+killbox.gd::GDScript::2580983698392712480::1782866132::0::1::::<>Area2D<><>0<>0<><>::
+killbox.tscn::PackedScene::3891999305259638086::1782867986::0::1::::<><><>0<>0<><>::uid://bc1ioovv4mymy::::res://killbox.gd
+progress_bar.gd::GDScript::8710724198300712477::1782888503::0::1::::<>ProgressBar<><>0<>0<><>::
+README.md::TextFile::-1::1782889410::0::1::::<><><>0<>0<><>::
+slime_p.gd::GDScript::556005950699213565::1782888503::0::1::::<>Node2D<><>0<>0<><>::
+slime_p.tscn::PackedScene::7487545386180772213::1782888503::0::1::::<><><>0<>0<><>::uid://h6llpkt6tfpd::::res://slime_p.gd<>uid://josfddxd1817::::res://sprites/slime_purple.png<>uid://bvpkwo44ou58m::::res://killbox.tscn
 slime_purple.gd::GDScript::1577948768373972261::1782826778::0::1::::<>CharacterBody2D<><>0<>0<><>::
 slime_purple.tscn::PackedScene::8729778923619848888::1782826778::0::1::::<><><>0<>0<><>::uid://josfddxd1817::::res://sprites/slime_purple.png<>uid://bvpkwo44ou58m::::res://killbox.tscn
-testing_stage.tscn::PackedScene::1679133180311635414::1782826825::0::1::::<><><>0<>0<><>::uid://dtjwbh56wmhen::::res://Success's stuff/player.tscn<>uid://bvpkwo44ou58m::::res://killbox.tscn<>uid://ck8lugnd7yxtp::::res://Success's stuff/Music/De Kieru.mp3<>uid://bfopswd1b2vj1::::res://sprites/world_tileset.png<>uid://dexa1qa1hecev::::res://slime_p.tscn
+testing_stage.tscn::PackedScene::1679133180311635414::1782888503::0::1::::<><><>0<>0<><>::uid://dtjwbh56wmhen::::res://Success's stuff/player.tscn<>uid://bvpkwo44ou58m::::res://killbox.tscn<>uid://ck8lugnd7yxtp::::res://Success's stuff/Music/De Kieru.mp3<>uid://bfopswd1b2vj1::::res://sprites/world_tileset.png<>uid://dwdsmciywwk4l::::res://progress_bar.gd<>uid://c88jhufjdj71r::::res://green_slime.tscn
 ::res://fonts/::1782717844
 ::res://Music/::1782826781
-::res://new-game-project/::1782648260
 ::res://Playerprites/::1782826781
 ::res://Playerprites/Idle_Sprites/::1782826781
 ::res://Playerprites/Jump_Sprites/::1782826781
@@ -89,44 +28,13 @@ slime_green.png::CompressedTexture2D::5605294776955216067::1782778168::178277816
 slime_purple.png::CompressedTexture2D::661702879392997560::1782778168::1782778168::1::::<><><>0<>0<>4aa2a40ad54d7fb85ccea40adf78be57<>res://.godot/imported/slime_purple.png-3d9e552c3e3aeb2a7f3441f746b4c24b.ctex::
 world_tileset.png::CompressedTexture2D::2767210250953744520::1782778352::1782778353::1::::<><><>0<>0<>23f48923a65125d0ad96f6e412c0756d<>res://.godot/imported/world_tileset.png-8b3dc0eb27b141bfe097cdfc0d6186a3.ctex::
 ::res://Stage Sprites/::1782826782
-::res://StartScreen/::1782826816
-start_button.gd::GDScript::4915712112300977504::1782826782::0::1::::<>Button<><>0<>0<><>::
-start_screen.tscn::PackedScene::6860373855287576311::1782826816::0::1::::<><><>0<>0<><>::uid://ccbhcbx3qbj8s::::res://StartScreen/start_button.gd
-::res://Success's stuff/::1782826825
-animated_sprite_2d.gd::GDScript::5541898806146789435::1782826782::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
-CallSpriteImage.gd::GDScript::7317103879876621988::1782826782::0::1::::<>RefCounted<><>0<>0<><>::
-character_body_2d.gd::GDScript::3688761218886401388::1782826782::0::1::::<>CharacterBody2D<><>0<>0<><>::
-player.tscn::PackedScene::8512767455069184465::1782826825::0::1::::<><><>0<>0<><>::uid://bss4mgihbqfdc::::res://Success's stuff/character_body_2d.gd<>uid://bk0cyl4olql57::::res://Success's stuff/Playerprites/Idle_Sprites/sprite-1-1(1).png<>uid://crkoinky8ujmf::::res://Success's stuff/Playerprites/Idle_Sprites/sprite-1-2(1).png<>uid://c65kpiubdb2tc::::res://Success's stuff/Playerprites/Idle_Sprites/sprite-1-3(1).png<>uid://dxhaf3joty437::::res://Success's stuff/Playerprites/Idle_Sprites/sprite-1-4(1).png<>uid://dbmo55cdgmoom::::res://Success's stuff/Playerprites/Idle_Sprites/sprite-1-5(1).png<>uid://d08tvfj4w6dyq::::res://Success's stuff/Playerprites/Idle_Sprites/sprite-1-6(1).png<>uid://c5myxenji5pn2::::res://Success's stuff/Playerprites/Run_Sprites/sprite-19-1.png<>uid://b10irqwwtnl0k::::res://Success's stuff/Playerprites/Jump_Sprites/sprite-27-4.png<>uid://barcbcxjlfm0g::::res://Success's stuff/Playerprites/Run_Sprites/sprite-19-2.png<>uid://bim4m8u17ddai::::res://Success's stuff/Playerprites/Run_Sprites/sprite-19-3.png<>uid://wjq3me566kba::::res://Success's stuff/Playerprites/Run_Sprites/sprite-19-4.png<>uid://cqj24w1tnbsex::::res://Success's stuff/Playerprites/Run_Sprites/sprite-19-5.png<>uid://lwuath7ktc5j::::res://Success's stuff/Playerprites/Run_Sprites/sprite-19-6.png<>uid://ccpcfpm76qgqr::::res://Success's stuff/Playerprites/Run_Sprites/sprite-19-7.png<>uid://brim7q22s37ge::::res://Success's stuff/Playerprites/Run_Sprites/sprite-19-8.png<>uid://bubix5xh812ca::::res://Success's stuff/Playerprites/Sprint_Sprites/sprite-21-1.png<>uid://cm10cuh4wh8rw::::res://Success's stuff/Playerprites/Sprint_Sprites/sprite-21-2.png<>uid://wmo4dxwmhrk5::::res://Success's stuff/Playerprites/Sprint_Sprites/sprite-21-3.png<>uid://be5j4busahrmd::::res://Success's stuff/Playerprites/Sprint_Sprites/sprite-21-4.png
-README.md::TextFile::-1::1782826782::0::1::::<><><>0<>0<><>::
-run_sprites.gd::GDScript::5089470026847572775::1782826782::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
-testing_stage.tscn::PackedScene::897552327513807889::1782826816::0::1::::<><><>0<>0<><>::uid://dtjwbh56wmhen::::res://player.tscn<>uid://ck8lugnd7yxtp::::res://Music/De Kieru.mp3<>uid://bvpkwo44ou58m::::res://killbox.tscn<>uid://bfopswd1b2vj1::::res://sprites/world_tileset.png<>uid://dexa1qa1hecev::::res://slime_p.tscn
-::res://Success's stuff/Music/::1782826817
-De Kieru.mp3::AudioStreamMP3::5543558207851625425::1782826782::1782826817::1::::<><><>0<>0<>c38516e00a19f730236cf8172750ebc0<>res://.godot/imported/De Kieru.mp3-3fef52a35b4d5e8ad0b05ec70114bfa1.mp3str::
-::res://Success's stuff/Playerprites/::1782826782
-character_body_2d.gd::GDScript::7795935346974659408::1782826782::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://Success's stuff/Playerprites/Idle_Sprites/::1782826817
-sprite-1-1(1).png::CompressedTexture2D::3140083480171787640::1782826782::1782826817::1::::<><><>0<>0<>20e8d815b1df7a4555b97d609bd62ce5<>res://.godot/imported/sprite-1-1(1).png-8250e3a575b1b338b8130156b8e160a9.ctex::
-sprite-1-2(1).png::CompressedTexture2D::5987560510410262257::1782826782::1782826817::1::::<><><>0<>0<>ebf312fd5fc26a41e48bff317d70f433<>res://.godot/imported/sprite-1-2(1).png-44522c9df63e4d79a96e2ff639b433e8.ctex::
-sprite-1-3(1).png::CompressedTexture2D::7011261260755642444::1782826782::1782826817::1::::<><><>0<>0<>215cd366df8ab316746c70b547b0cb58<>res://.godot/imported/sprite-1-3(1).png-40ac93f2c241dc2ec080f846fc303608.ctex::
-sprite-1-4(1).png::CompressedTexture2D::8788066513221498812::1782826782::1782826817::1::::<><><>0<>0<>c6d0f38aa954b010ab8f2ff11ba6c1bc<>res://.godot/imported/sprite-1-4(1).png-502a69e2e4d4c6c25a413005a53d4603.ctex::
-sprite-1-5(1).png::CompressedTexture2D::7255128618416856000::1782826782::1782826817::1::::<><><>0<>0<>5066bad7ef210f52a400b49b1f4f0036<>res://.godot/imported/sprite-1-5(1).png-36eb1e919b59ad545b92a12c5e12243d.ctex::
-sprite-1-6(1).png::CompressedTexture2D::8983299010316890884::1782826782::1782826817::1::::<><><>0<>0<>1f7363a698247cc37c3485cfe36e21ec<>res://.godot/imported/sprite-1-6(1).png-bee20db4ee01cef89c985c5a73f9911d.ctex::
-::res://Success's stuff/Playerprites/Jump_Sprites/::1782826817
-sprite-27-4.png::CompressedTexture2D::4263457031956746080::1782826782::1782826817::1::::<><><>0<>0<>78eec5b341e5cd4d8a412c74b1691eb3<>res://.godot/imported/sprite-27-4.png-63167fb29ed745ddf3907dbe66522433.ctex::
-::res://Success's stuff/Playerprites/Run_Sprites/::1782826817
-sprite-19-1.png::CompressedTexture2D::6904777721258763105::1782826782::1782826817::1::::<><><>0<>0<>aff7f2d1b91700c4d029a1e7565dfbe0<>res://.godot/imported/sprite-19-1.png-15e21f51879c67f2b8d99fe200b634ba.ctex::
-sprite-19-2.png::CompressedTexture2D::2421638466292586688::1782826782::1782826817::1::::<><><>0<>0<>2c82fe1a75a2946e62614ff94e8eae7e<>res://.godot/imported/sprite-19-2.png-62e2f248e7fa646ea360f130aa3612d6.ctex::
-sprite-19-3.png::CompressedTexture2D::2974487953554011884::1782826782::1782826817::1::::<><><>0<>0<>0393c8976810ee8f53249eafd1678fe1<>res://.godot/imported/sprite-19-3.png-d5ee445531683c11458d1a7dcf8a9965.ctex::
-sprite-19-4.png::CompressedTexture2D::1563756071801989490::1782826782::1782826817::1::::<><><>0<>0<>cef3a46d27d478fac09ae48958cdc5c4<>res://.godot/imported/sprite-19-4.png-0b371df0ad5de78db5715c90f278c490.ctex::
-sprite-19-5.png::CompressedTexture2D::5916134608768518431::1782826782::1782826817::1::::<><><>0<>0<>493ab8fd5b6c73ff8e94a267d3a73d4e<>res://.godot/imported/sprite-19-5.png-e0c7656be2f3c7d376335b8c87a04436.ctex::
-sprite-19-6.png::CompressedTexture2D::818708940688331269::1782826782::1782826817::1::::<><><>0<>0<>25e325bfe92d73b4fbd064440c82056d<>res://.godot/imported/sprite-19-6.png-5e369623c4a5507c03eba600b41161e2.ctex::
-sprite-19-7.png::CompressedTexture2D::4944315891812122425::1782826782::1782826817::1::::<><><>0<>0<>e7d52051edac12e9c1f41d3f41903b6d<>res://.godot/imported/sprite-19-7.png-fb6c0615140dc2032db5b05b7581495f.ctex::
-sprite-19-8.png::CompressedTexture2D::3596932680225553776::1782826782::1782826817::1::::<><><>0<>0<>b6d706dbc2fb958164fa7d4a6c01f798<>res://.godot/imported/sprite-19-8.png-a6eb65106ae64e7d6bb689e24188d2e2.ctex::
-::res://Success's stuff/Playerprites/Sprint_Sprites/::1782826817
-sprite-21-1.png::CompressedTexture2D::3792790355003958960::1782826782::1782826817::1::::<><><>0<>0<>1ff1b951926d57e698f87b61b0f5ea0b<>res://.godot/imported/sprite-21-1.png-22410ca533208c955b1ab8edb056e19a.ctex::
-sprite-21-2.png::CompressedTexture2D::5670303871683090644::1782826782::1782826817::1::::<><><>0<>0<>f3022ded16df52bfff570a21df51db05<>res://.godot/imported/sprite-21-2.png-0a175882d135c7707d43d601544052d8.ctex::
-sprite-21-3.png::CompressedTexture2D::1569829113123864750::1782826782::1782826817::1::::<><><>0<>0<>59ecf8365f105b18837296b2b53d91f7<>res://.godot/imported/sprite-21-3.png-e01a242131262fd9d92dc71bb5a70caf.ctex::
-sprite-21-4.png::CompressedTexture2D::2729705716062735319::1782826782::1782826817::1::::<><><>0<>0<>8bdbe5a75f46fee9a20d3a22f6835186<>res://.godot/imported/sprite-21-4.png-4b56ff3b8a202127a5550603bd5795a3.ctex::
-::res://Success's stuff/Stage Sprites/::1782826817
-1c223ed1e8871fb269c201d2fbe7f1f1.jpg::CompressedTexture2D::4139098206696673698::1782826782::1782826817::1::::<><><>0<>0<>56ecebc04c458117d05e02419028d45b<>res://.godot/imported/1c223ed1e8871fb269c201d2fbe7f1f1.jpg-3bc074fb5544a6de89e8ff872381932b.ctex::
->>>>>>> thomasmk3
+::res://StartScreen/::1782889409
+::res://UI's/::1782887936
+::res://UI's/PauseMenu/::1782889427
+PauseMenu.gdshader::Shader::5677543808563677344::1782889410::0::1::::<><><>0<>0<><>::
+PauseMenu.tscn::PackedScene::5403927882700569291::1782889427::0::1::::<><><>0<>0<><>::uid://l31ddaybsfiq::::res://UI's/PauseMenu/pause_menu.gd<>uid://cm5ik1qpjo0vs::::res://UI's/PauseMenu/PauseMenu.gdshader
+pause_menu.gd::GDScript::831464014988223188::1782889410::0::1::::<>Control<><>0<>0<><>::
+::res://UI's/StartScreen/::1782889427
+start_button.gd::GDScript::4915712112300977504::1782889410::0::1::::<>Button<><>0<>0<><>::
+start_screen.tscn::PackedScene::6860373855287576311::1782889427::0::1::::<><><>0<>0<><>::uid://ccbhcbx3qbj8s::::res://UI's/StartScreen/start_button.gd
+::res://v.e.s.l/::1782887936
