@@ -1,5 +1,6 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1782948195
+::res://::1782950055
+export_presets.cfg::TextFile::-1::1782950055::0::1::::<><><>0<>0<><>::
 green_slime.gd::GDScript::1045764295066630674::1782888503::0::1::::<>CharacterBody2D<><>0<>0<><>::
 green_slime.tscn::PackedScene::7157757685421820253::1782888503::0::1::::<><><>0<>0<><>::uid://cl4ineivkrpfv::::res://sprites/slime_green.png<>uid://o5tt5o2iks55::::res://green_slime.gd<>uid://bvpkwo44ou58m::::res://killbox.tscn
 killbox.gd::GDScript::2580983698392712480::1782866132::0::1::::<>Area2D<><>0<>0<><>::
@@ -11,6 +12,9 @@ slime_p.tscn::PackedScene::7487545386180772213::1782888503::0::1::::<><><>0<>0<>
 slime_purple.gd::GDScript::1577948768373972261::1782826778::0::1::::<>CharacterBody2D<><>0<>0<><>::
 slime_purple.tscn::PackedScene::8729778923619848888::1782826778::0::1::::<><><>0<>0<><>::uid://josfddxd1817::::res://sprites/slime_purple.png<>uid://bvpkwo44ou58m::::res://killbox.tscn
 testing_stage.tscn::PackedScene::1679133180311635414::1782888503::0::1::::<><><>0<>0<><>::uid://dtjwbh56wmhen::::res://Success's stuff/player.tscn<>uid://bvpkwo44ou58m::::res://killbox.tscn<>uid://ck8lugnd7yxtp::::res://Success's stuff/Music/De Kieru.mp3<>uid://bfopswd1b2vj1::::res://sprites/world_tileset.png<>uid://dwdsmciywwk4l::::res://progress_bar.gd<>uid://c88jhufjdj71r::::res://green_slime.tscn
+V.E.S.L..apple-touch-icon.png::CompressedTexture2D::5526246773284322101::1782950055::1782950064::1::::<><><>0<>0<>7bf43649555c54de09aefe7a8d90ef0f<>res://.godot/imported/V.E.S.L..apple-touch-icon.png-ba9144066dc7e926e48332f4f05c1956.ctex::
+V.E.S.L..icon.png::CompressedTexture2D::5961564527090922689::1782950055::1782950064::1::::<><><>0<>0<>8360835214d1af163e14e0b19ff74e21<>res://.godot/imported/V.E.S.L..icon.png-3e6629865b77331c4a5e75986929e09a.ctex::
+V.E.S.L..png::CompressedTexture2D::5902198800437593233::1782950055::1782950064::1::::<><><>0<>0<>899ba1640dfbfc3d556cf23b603b53c5<>res://.godot/imported/V.E.S.L..png-67439b2ac8444458be4af0f9705f50a6.ctex::
 ::res://fonts/::1782717844
 ::res://Music/::1782826781
 ::res://Playerprites/::1782826781
