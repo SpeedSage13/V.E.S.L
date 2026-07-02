@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://tffufww80wme"]
+
+[ext_resource type="Texture2D" uid="uid://dyds3ttqi47nh" path="res://sprites/fruit.png" id="1_jhvvf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0eug2"]
+atlas = ExtResource("1_jhvvf")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6xdhg"]
+atlas = ExtResource("1_jhvvf")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ccppr"]
+atlas = ExtResource("1_jhvvf")
+region = Rect2(16, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l2jes"]
+atlas = ExtResource("1_jhvvf")
+region = Rect2(16, 48, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vck44"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0eug2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6xdhg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ccppr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l2jes")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_85snf"]
+radius = 6.0
+height = 18.0
+
+[node name="Area2D" type="Area2D" unique_id=704624084]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1593973948]
+sprite_frames = SubResource("SpriteFrames_vck44")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=58297094]
+position = Vector2(0, -1)
+shape = SubResource("CapsuleShape2D_85snf")

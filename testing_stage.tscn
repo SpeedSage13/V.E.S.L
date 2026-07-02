@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bfopswd1b2vj1" path="res://sprites/world_tileset.png" id="4_4ovcg"]
 [ext_resource type="Script" uid="uid://dwdsmciywwk4l" path="res://progress_bar.gd" id="6_614tr"]
 [ext_resource type="PackedScene" uid="uid://c88jhufjdj71r" path="res://green_slime.tscn" id="7_0wwje"]
+[ext_resource type="PackedScene" uid="uid://dw0cttsusf02k" path="res://grape.tscn" id="7_4ovcg"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_bvb4n"]
 distance = -198.03539
@@ -394,3 +395,6 @@ tile_set = SubResource("TileSet_614tr")
 [node name="BackgroundLayer" type="TileMapLayer" parent="TileMapLayer" unique_id=1839796286]
 tile_map_data = PackedByteArray("AACD/wgAAAABAAkAAACD/wcAAAABAAkAAACD/wYAAAABAAkAAAA=")
 tile_set = SubResource("TileSet_0wwje")
+
+[node name="Area2D" parent="." unique_id=44092271 instance=ExtResource("7_4ovcg")]
+position = Vector2(-2285.1924, 137.76375)
