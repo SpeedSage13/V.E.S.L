@@ -74,8 +74,6 @@ offset_left = 386.0
 offset_top = 14.0
 offset_right = 840.0
 offset_bottom = 203.0
-theme_override_colors/icon_normal_color = Color(0.6509804, 0.2509804, 0.22745098, 1)
-theme_override_colors/icon_hover_color = Color(0.6509804, 0.2627451, 0.2, 1)
 text = "Save & Quit"
 
 [node name="Settings" type="Button" parent="." unique_id=1056614621]
