@@ -2,16 +2,26 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD:V.E.S.L..apple-touch-icon.png.import
 uid="uid://cky7qhmqp6td2"
 path="res://.godot/imported/V.E.S.L..apple-touch-icon.png-ba9144066dc7e926e48332f4f05c1956.ctex"
+=======
+uid="uid://b10irqwwtnl0k"
+path="res://.godot/imported/sprite-27-4.png-f4153a82bda54a55708a7a9e50c9c30c.ctex"
+>>>>>>> parent of a282ccc (FIXED. EVERYTHING. #1):Success's stuff/Playerprites/Jump_Sprites/sprite-27-4.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
+<<<<<<< HEAD:V.E.S.L..apple-touch-icon.png.import
 source_file="res://V.E.S.L..apple-touch-icon.png"
 dest_files=["res://.godot/imported/V.E.S.L..apple-touch-icon.png-ba9144066dc7e926e48332f4f05c1956.ctex"]
+=======
+source_file="res://Playerprites/Jump_Sprites/sprite-27-4.png"
+dest_files=["res://.godot/imported/sprite-27-4.png-f4153a82bda54a55708a7a9e50c9c30c.ctex"]
+>>>>>>> parent of a282ccc (FIXED. EVERYTHING. #1):Success's stuff/Playerprites/Jump_Sprites/sprite-27-4.png.import
 
 [params]
 

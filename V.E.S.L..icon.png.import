@@ -2,16 +2,26 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD:V.E.S.L..icon.png.import
 uid="uid://cq63dj4jrbqaj"
 path="res://.godot/imported/V.E.S.L..icon.png-3e6629865b77331c4a5e75986929e09a.ctex"
+=======
+uid="uid://wjq3me566kba"
+path="res://.godot/imported/sprite-19-4.png-0448cb901e325a545b45f3177582f0ca.ctex"
+>>>>>>> parent of a282ccc (FIXED. EVERYTHING. #1):Success's stuff/Playerprites/Run_Sprites/sprite-19-4.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
+<<<<<<< HEAD:V.E.S.L..icon.png.import
 source_file="res://V.E.S.L..icon.png"
 dest_files=["res://.godot/imported/V.E.S.L..icon.png-3e6629865b77331c4a5e75986929e09a.ctex"]
+=======
+source_file="res://Playerprites/Run_Sprites/sprite-19-4.png"
+dest_files=["res://.godot/imported/sprite-19-4.png-0448cb901e325a545b45f3177582f0ca.ctex"]
+>>>>>>> parent of a282ccc (FIXED. EVERYTHING. #1):Success's stuff/Playerprites/Run_Sprites/sprite-19-4.png.import
 
 [params]
 
